@@ -1,0 +1,9 @@
+{% if promos_list %}
+    <ul>
+    {% for promo in teachers_list %}
+        <li><a href="/teachers/promos/{{ promo.id }}/">{{ promo.name }} ({{ promo.amount }})</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No promos yet.</p>
+{% endif %}
